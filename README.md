@@ -61,7 +61,7 @@ There are two different ways to interpret this question.
 
 Interpretation 1: The product that was ordered the most times by customers in Germany (ignoring quantity in each order) was Gorgonzola Telino. I used the following query:
 
-'''sql
+```sql
 SELECT ProductName
 FROM Orders 
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
@@ -71,11 +71,11 @@ WHERE Country = "Germany"
 GROUP BY Products.ProductID
 ORDER BY COUNT(Products.ProductID) DESC
 LIMIT 1
-'''
+```
 
 Interpretation 2: The product with the highest total quantity ordered by customers in Germany was Boston Crab Meat. I used the following query:
 
-'''sql
+```sql
 SELECT sum(Quantity)
 FROM Orders 
 JOIN Customers ON Orders.CustomerID = Customers.CustomerID
@@ -85,4 +85,4 @@ WHERE Country = "Germany"
 GROUP BY ProductName
 ORDER BY sum(Quantity) DESC
 LIMIT 1
-'''
+```
