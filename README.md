@@ -1,1 +1,2 @@
-# Shopify-Data-Science
+# Shopify Data Science Internship Application
+
