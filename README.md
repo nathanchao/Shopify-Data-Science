@@ -1,4 +1,6 @@
-# Shopify Data Science Internship Application
+# Shopify Technical Challenge Submission
+
+My answers are shown below and all relevant files are saved in this repo.
 
 ### Question 1
 
