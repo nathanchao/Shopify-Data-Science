@@ -35,7 +35,7 @@ print("The median order value is: ", orders["order_amount"].median())
 
 
 ### Question 2
-a. How many orders were shipped by Speedy Express in total?
+**a. How many orders were shipped by Speedy Express in total?**
 ```sql
 SELECT COUNT(ShipperName) 
 FROM Shippers JOIN Orders ON Shippers.ShipperID = Orders.ShipperID
@@ -44,7 +44,7 @@ WHERE ShipperName = "Speedy Express";
 
 Answer: 54
 
-b. What is the last name of the employee with the most orders?
+**b. What is the last name of the employee with the most orders?**
 ```sql
 SELECT LastName
 FROM Orders JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
@@ -55,7 +55,7 @@ LIMIT 1;
 
 Answer: Peacock
 
-c. What product was ordered the most by customers in Germany?
+**c. What product was ordered the most by customers in Germany?**
 
 There are two different ways to interpret this question. 
 
